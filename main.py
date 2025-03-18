@@ -6,11 +6,13 @@ st.title("Modgut Database")
 
 region = pd.read_csv('region_personal.csv')
 
+st.image("Criteria.png")
+
 option = st.selectbox(
     'Please select a criteria',
     ('gender', 'age_group', 'bmi_group', 'region'))
 
-st.write('You criteria:', option)
+st.markdown('You criteria:', option)
 
 #show_btn = st.button("Display!")
 #if show_btn:
@@ -23,3 +25,4 @@ for i in ('gender', 'age_group', 'bmi_group', 'region'):
         # Plot!
         st.plotly_chart(fig)
 
+st.markdown("Last updated: Nov 19, 2024.")
