@@ -12,7 +12,7 @@ option = st.selectbox(
     'Please select a criteria',
     ('gender', 'age_group', 'bmi_group', 'region'))
 
-st.markdown('You criteria:', option)
+st.write('You criteria:', option)
 
 #show_btn = st.button("Display!")
 #if show_btn:
