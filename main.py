@@ -18,7 +18,7 @@ for i in ('gender', 'age_group', 'bmi_group', 'region'):
     if i in option:
         # Create distplot with custom bin_size
         fig = px.pie(region[option].value_counts(), values=region[option].value_counts().values, names=region[option].value_counts().index)
-        fig.update_traces(hoverinfo='label+percent', textinfo='value')
+        fig.update_traces(hoverinfo='label+percent', textinfo='value+percent')
 
         # Plot!
         st.plotly_chart(fig)
