@@ -22,3 +22,4 @@ for i in ('gender', 'age_group', 'bmi_group', 'region'):
 
         # Plot!
         st.plotly_chart(fig)
+
