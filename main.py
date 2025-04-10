@@ -8,7 +8,6 @@ st.set_page_config(
     layout="wide")
 
 st.title("Modgut Database")
-
 region = pd.read_csv('region_personal.csv')
 
 st.image("Criteria.png")
